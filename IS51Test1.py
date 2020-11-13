@@ -9,9 +9,9 @@ Function2 will calculate the amounbt for option 2.
 function1 will ouput $100 * 10 days.
 function2 will loop for 10 days, each day the pay rate will double and add that amount to total
 
-If options are equal, we output "Each option makes the same amount" show amount
-If option1 makes more, we output "Option1 makes more at: $"
-If option2 makes more, we output "Option2 makes more at: $"
+If options are equal, we output "Option 1 and Option 2 pays the same"
+If option1 makes more, we output "Option 1 is better"
+If option2 makes more, we output "Option 2 is better"
 """
 
 """
@@ -32,11 +32,40 @@ If option2 makes more, we output "Option2 makes more at: $"
     var2 = option2
 
     if var1 == var2
-        "Option 1 and Option 2 pays the same at $" var1
+        "Option 1 and Option 2 pays the same"
     elif var1 > var2
-        "Option 1 is better at $" var1
+        "Option 1 is better"
     else
-        "Option 2 is better at $" var 2
+        "Option 2 is better"
 
 main
 """
+
+def option1():
+    return 100*10
+
+def option2():
+    amount = 1
+    list1 = []
+    i = 0
+    while i < 10:
+        list1.append(amount)
+        amount *= 2
+        i += 1
+    total = sum(list1)
+    return total
+
+def main():
+    answer =""
+    var1 = option1()
+    var2 = option2()
+    if var1 == var2:
+        answer = "Option 1 and Option 2 pays the same"
+    elif var1 > var2:
+        answer = "Option 1 is better"
+    else:
+        answer = "Option 2 is better"
+    print(answer)
+
+
+main()
