@@ -13,3 +13,30 @@ If options are equal, we output "Each option makes the same amount" show amount
 If option1 makes more, we output "Option1 makes more at: $"
 If option2 makes more, we output "Option2 makes more at: $"
 """
+
+"""
+#option1
+    return 100*10
+
+#option2
+    amount = 1
+    list1 = []
+    loop 10 times
+        add amount to list1
+        amount *=
+    sum = sum of the loop
+    return sum
+
+#main
+    var1 = option1
+    var2 = option2
+
+    if var1 == var2
+        "Option 1 and Option 2 pays the same at $" var1
+    elif var1 > var2
+        "Option 1 is better at $" var1
+    else
+        "Option 2 is better at $" var 2
+
+main
+"""
